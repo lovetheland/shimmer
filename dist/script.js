@@ -118,8 +118,8 @@ renderer.localClippingEnabled = true;
 
 // animation
 function animation( time ) {
-  mesh.rotation.y = Math.sin(time * .000001) * 5 - 3;
-  wiremesh.rotation.y = Math.sin(time * .000001) * 5 - 3;
+  mesh.rotation.y = Math.sin(time * .000001) * 5 + 1.6;
+  wiremesh.rotation.y = Math.sin(time * .000001) * 5 + 1.6;
   mesh2.rotation.y = -Math.sin(time * .000004) * 5;
 
   renderer.render( scene, camera );
