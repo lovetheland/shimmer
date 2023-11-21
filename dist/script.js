@@ -5,6 +5,7 @@ const canvas = document.querySelector('canvas.webgl')
 
 
 
+
 // init
 
 const aspect = (window.innerWidth) / (window.innerHeight)
@@ -107,7 +108,9 @@ const mesh2 = new THREE.Mesh( geometry2, material2 );
 
 scene.add( mesh, mesh2, wiremesh );
 
-const renderer = new THREE.WebGLRenderer( { antialias: true
+var canvReference = document.getElementById("my_canvas");
+
+const renderer = new THREE.WebGLRenderer( { antialias: true, canvas: canvReference
 } );
 renderer.setSize( window.innerWidth*2, window.innerHeight*2 );
 renderer.setAnimationLoop( animation );
@@ -117,9 +120,9 @@ renderer.localClippingEnabled = true;
 
 // animation
 function animation( time ) {
-  mesh.rotation.y = Math.sin(time * .00002) * 5 - 3;
-  wiremesh.rotation.y = Math.sin(time * .00002) * 5 - 3;
-  mesh2.rotation.y = -Math.sin(time * .00002) * 5;
+  mesh.rotation.y = Math.sin(time * .000001) * 5 - 3;
+  wiremesh.rotation.y = Math.sin(time * .000001) * 5 - 3;
+  mesh2.rotation.y = -Math.sin(time * .000004) * 5;
 
   renderer.render( scene, camera );
   document.body.appendChild( renderer.domElement );

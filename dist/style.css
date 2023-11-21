@@ -1,16 +1,6 @@
-*{
-    margin: 0px;
-    padding: 0px;
-}
-
-main {
-  width: 100vw;
-  height: 100vw;
-}
-
-.webgl {
-  max-width: 100vw;
-  max-height: 100vh;
+@font-face {
+    font-family: Quivira;
+    src: url("/Quivira.otf") format("opentype");
 }
 
 body {
@@ -19,7 +9,7 @@ body {
     position: absolute;
     z-index: 999999;
     font-size: 12pt;
-    font-family: 'Garamond';
+    font-family: 'Quivira';
     color: white;
 }
 body span {
@@ -27,15 +17,13 @@ body span {
     }
 
 div {
-  margin-top: 11%;
-  margin-left: 10%;
-  
-  border: 1px blue;
+  margin-top: 10vh;
+  margin-left: 10vh;
 }
 
 canvas {
-  max-width: 100% !important;
-  max-height: 100% !important;
+  max-width: 100vw;
+  max-height: 100vh;
   pointer-events: none;
   position: absolute;
   top: 0;
@@ -45,9 +33,11 @@ canvas {
 }
 
 p {
+  
     margin-left: 34px;
     font-size: 12pt;
-    width: 400px;      
+    max-width: 40vw;
+  
   }
 
 p span {
@@ -74,10 +64,12 @@ summary span {
 
 details > summary {
     list-style-type: none;
+  
 }
 
 details > summary::-webkit-details-marker {
     display: none;
+  
 }
 
 details > summary::before {
