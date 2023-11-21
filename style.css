@@ -1,6 +1,14 @@
 @font-face {
-    font-family: Quivira;
-    src: url("https://github.com/lovetheland/shimmer/raw/main/dist/Quivira.otf") format("opentype");
+    font-family: ETbb-Regular;
+    src: url("https://github.com/lovetheland/shimmer/raw/main/dist/ETbb-Regular.otf") format("opentype");
+}
+@font-face {
+    font-family: ETbb-Bold;
+    src: url("https://github.com/lovetheland/shimmer/raw/main/dist/ETbb-Bold.otf") format("opentype");
+}
+@font-face {
+    font-family: ETbb-Italic;
+    src: url("https://github.com/lovetheland/shimmer/raw/main/dist/ETbb-Italic.otf") format("opentype");
 }
 
 body {
@@ -9,13 +17,17 @@ body {
     position: absolute;
     z-index: 999999;
     font-size: 12pt;
-    font-family: 'Quivira';
+    font-family: 'ETbb-Regular';
     line-height: 14pt;
     color: white;
 }
 body span {
 //      background-color: white;
     }
+
+i {
+    font-family: ETbb-Italic;
+}
 
 div {
   margin-top: 10vh;
