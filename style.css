@@ -23,6 +23,11 @@
     font-size: 3vw !important;
   }
 }
+@media screen and (max-width:400px){
+  div {
+  margin: 9vh;
+}
+}
 
 body {
     margin: 0;
@@ -43,7 +48,7 @@ i {
 }
 
 div {
-  margin: 9vh;
+  margin: 11vh;
 }
 
 canvas {
