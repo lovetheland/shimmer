@@ -4,8 +4,6 @@ const canvas = document.querySelector('canvas.webgl')
 
 
 
-
-
 // init
 
 const aspect = (window.innerWidth) / (window.innerHeight)
