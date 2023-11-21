@@ -8,6 +8,11 @@ main {
   height: 100vw;
 }
 
+.webgl {
+  max-width: 100vw;
+  max-height: 100vh;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -78,11 +83,4 @@ details > summary::-webkit-details-marker {
 details > summary::before {
     content: '⸺ ';
  //         background-color: white;
-}
-
-.webgl{
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100%;
 }
