@@ -5,6 +5,7 @@ const canvas = document.querySelector('canvas.webgl')
 
 
 
+
 // init
 
 const camera = new THREE.PerspectiveCamera( 80, window.innerWidth / window.innerHeight, 0.01, 10 );
@@ -31,17 +32,20 @@ const geometry2 = new THREE.SphereGeometry(.95, 220, 120);
 //geometry.translate(1,0,0);
 //geometry2.translate(1,0,0);
 
-var texture = new THREE.TextureLoader().load( "https://raw.githubusercontent.com/forestshan/forestshan.github.pages/3a87806e16755c118778a8a1f47d630bb4e49cb5/amarillo.jpg", THREE.UVMapping );
+var texture = new THREE.TextureLoader().load( "https://raw.githubusercontent.com/lovetheland/shimmer/main/dist/amarillobigx.jpg", THREE.UVMapping );
 var material = new THREE.MeshBasicMaterial({
   map: texture,
-  side: THREE.BackSide,
+  side: THREE.DoubleSide,
+  reflectivity: 0
+//  color: 0xffffff
 //  wireframe: true
 //  clippingPlanes: frustum.planes
 });
 
 var wiremat = new THREE.MeshBasicMaterial({
-  side: THREE.BackSide,
+ // side: THREE.BackSide,
   wireframe: true,
+  reflectivity: 0
 //  wireframeLinewidth: .5
 //  clippingPlanes: frustum.planes
 });
@@ -72,6 +76,7 @@ scene.add( mesh, mesh2 );
 const renderer = new THREE.WebGLRenderer( { antialias: true } );
 renderer.setSize( window.innerWidth, window.innerHeight );
 renderer.setAnimationLoop( animation );
+renderer.outputEncoding = THREE.LinearEncoding;
 renderer.localClippingEnabled = true;
 
 
