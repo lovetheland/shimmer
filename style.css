@@ -1,6 +1,6 @@
 @font-face {
     font-family: Quivira;
-    src: url("/Quivira.otf") format("opentype");
+    src: url("https://github.com/lovetheland/shimmer/raw/main/dist/Quivira.otf") format("opentype");
 }
 
 body {
@@ -10,6 +10,7 @@ body {
     z-index: 999999;
     font-size: 12pt;
     font-family: 'Quivira';
+    line-height: 14pt;
     color: white;
 }
 body span {
@@ -45,8 +46,8 @@ p span {
     }
 
 h1 {
-    font-size: 24pt;
-    font-weight: 200;
+ //   font-size: 24pt;
+    font-weight: bold;
   }
 
 h1 span {
