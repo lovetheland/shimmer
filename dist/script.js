@@ -9,7 +9,7 @@ const canvas = document.querySelector('canvas.webgl')
 const aspect = (window.innerWidth) / (window.innerHeight)
 const ww = window.innerWidth;
 const hh = window.innerHeight;
-const crop = window.innerHeight * .125;
+const crop = window.innerHeight * .18;
 const wwcrop = ww - crop;
 const hhcrop = hh - crop;
 
@@ -46,7 +46,7 @@ const geometry2 = new THREE.SphereGeometry(.95, 220, 120);
 //geometry.translate(1,0,0);
 //geometry2.translate(1,0,0);
 
-//phelper = new THREE.PlaneHelper(frustum.planes[1], 1, 0xFF0000);
+//const phelper = new THREE.PlaneHelper(frustum.planes[1], 1, 0xFF0000);
 //scene.add(phelper);
 
 let planearr = [frustum2.planes[0].negate(), frustum2.planes[1].negate(), 
