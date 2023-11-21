@@ -25,7 +25,7 @@
 }
 @media screen and (max-width:400px){
   div {
-  margin: 3vh;
+  margin: 8vh !important;
 }
 }
 
