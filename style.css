@@ -1,19 +1,18 @@
 @font-face {
     font-family: ETbb-Regular;
-    src: url("/ETbb-Regular.otf") format("opentype");
+    src: url("https://github.io/lovetheland/shimmer/raw/main/dist/ETbb-Regular.otf") format("opentype");
 }
 @font-face {
     font-family: ETbb-Bold;
-    src: url("/ETbb-Bold.otf") format("opentype");
+    src: url("https://github.io/lovetheland/shimmer/raw/main/dist/ETbb-Bold.otf") format("opentype");
 }
 @font-face {
     font-family: ETbb-Italic;
-    src: url("/ETbb-Italic.otf") format("opentype");
+    src: url("https://github.io/lovetheland/shimmer/raw/main/dist/ETbb-Italic.otf") format("opentype");
 }
 
 @media screen and (min-width: 800px) {
   body {
-    background-color: olive;
     font-size: 1.5vw !important;
     line-height: 1.5vw !important;
   }
