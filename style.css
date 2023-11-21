@@ -16,9 +16,9 @@ body {
     padding: 0;
     position: absolute;
     z-index: 999999;
-    font-size: 12pt;
+    font-size: 2.5vw;
     font-family: 'ETbb-Regular';
-    line-height: 14pt;
+    line-height: 2.5vw;
     color: white;
 }
 body span {
@@ -46,8 +46,8 @@ canvas {
 
 p {
   
-    margin-left: 34px;
-    font-size: 12pt;
+    margin-left: 5vw;
+    font-size: 2.5vw;
     max-width: 40vw;
   
   }
@@ -57,7 +57,7 @@ p span {
     }
 
 h1 {
- //   font-size: 24pt;
+    font-size: 5vw;
   }
 
 h1 span {
